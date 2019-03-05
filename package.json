@@ -1,7 +1,7 @@
 {
   "name": "Eagles Eye",
-  "description": "Test",
-  "version": "0.0.0",
+  "description": "A Discord Bot that can do anything!",
+  "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
