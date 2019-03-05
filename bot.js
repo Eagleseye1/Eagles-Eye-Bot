@@ -17,6 +17,13 @@ client.on('message', message => {
   	}
 });
 
+});
+
+client.on('message', message => {
+    if (message.content === 'eagleseye') {
+    	message.reply('https://www.youtube.com/channel/UC4Dde7hKcXXrGefVVh3CCBQ?view_as=subscriber');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
