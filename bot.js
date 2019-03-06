@@ -4,15 +4,14 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     
-    client.user.setActivity("prefix ea!");
+    client.user.setGame ("prefix ea!");
 });
 
 const prefix = "ea!";
 
 client.on('message', message => {
     if (message.content.startsWith (prefix + "hello")) {
-    	message.reply('Hi!');
-        
+    	message.reply('Hi!');    
   	}
 });
 
