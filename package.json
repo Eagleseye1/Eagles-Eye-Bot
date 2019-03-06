@@ -2,7 +2,7 @@
   "name": "Eagles Eye",
   "description": "Test",
   "version": "1.0.0",
-  "main": "bot.js",
+  "main": "dankmemer.js",
   "scripts": {
     "start": "node bot.js"
   },
