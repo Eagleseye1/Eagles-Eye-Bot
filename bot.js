@@ -15,5 +15,7 @@ client.on('message', message => {
   	}
 });
 
+const fs = require("fs");
+client.smsgs = require("./smsgs.json");
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
