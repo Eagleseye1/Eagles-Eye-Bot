@@ -16,7 +16,7 @@ client.on('message', message => {
 });
 
 var fs = require("fs");
-var poem = fs.readFileSync("./poem.txt", {"encoding": "utf-8"});
+var poem = fs.readFileSync("chat.txt", {"encoding": "utf-8"});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
