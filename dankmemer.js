@@ -21,3 +21,5 @@ exports.run = async (client, message, args) => {
         return console.log(err);
     }
 }
+
+client.login(process.env.BOT_TOKEN);
