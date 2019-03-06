@@ -3,33 +3,16 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    
+    client.user.setGame ("Prefix ea!");
 });
 
+const prefix = "ea!";
+
 client.on('message', message => {
-    if (message.content === 'Hi') {
-    	message.reply('Hi,How are you?');
+    if (message.content.startsWith (prefix + "hello")) {
+    	message.reply('Hi!');
   	}
-});
-
-client.on('message', message => {
-    if (message.content === 'Fine thanks and you?') {
-    	message.reply('I am fine!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'eagleseye') {
-    	message.reply('https://www.youtube.com/channel/UC4Dde7hKcXXrGefVVh3CCBQ?view_as=subscriber');
-  	}
-});
-
-client.on('message', message => {
-
-    if (message.content === 'ping') {
-
-    	message.reply('%meme');  	
-    }
-
 });
 
 // THIS  MUST  BE  THIS  WAY
