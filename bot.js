@@ -12,6 +12,7 @@ const prefix = "ea!";
 client.on('message', message => {
     if (message.content.startsWith (prefix + "hello")) {
     	message.reply('Hi!');
+        
   	}
 });
 
