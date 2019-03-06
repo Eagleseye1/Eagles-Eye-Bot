@@ -17,15 +17,3 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-
-commandfile1 = require('./commandfile1.js')
-yourBot.on('message', msg => {
-  if (msg.content.startsWith(yourPrefix){
-    cmdmsg = msg.content.replace(yourprefix, '')
-    for (command in commandfile1){
-      if (cmdmsg.startsWith(commandfile1[command])){
-        commandfile1[command].variableToCallToRunFunction(arguements)
-      } 
-    }
-  }
-}
